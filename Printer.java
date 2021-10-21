@@ -26,18 +26,36 @@ public class Printer{
 		System.out.println("");
 		System.out.println("Walmart Food Receipt");
 		
-		System.out.println("Qty    Item Description    Cost");
+		System.out.println("Qty        Item Description            Cost");
 		if(applesNum>0){
-			System.out.println("" + applesNum + "      Apples              $" + applesNum*applesCost);
+			System.out.println("" + applesNum + "          Apples                      $" + String.format("%.2f", applesNum*applesCost));
 		}
 		if(bananaNum>0){
-			System.out.println("" + bananaNum + "      Bananas             $" + bananaNum*bananaCost);
+			System.out.println("" + bananaNum + "          Bananas                     $" + String.format("%.2f", bananaNum*bananaCost));
+		}
+		if(grapeNum>0){
+			System.out.println("" + grapeNum  + "          Grapes                      $" + String.format("%.2f", grapeNum*grapeCost));
+		}
+		if(mangoNum>0){
+			System.out.println("" + mangoNum  + "          Mangos                      $" + String.format("%.2f", mangoNum*mangoCost));
+		}
+		if(peachNum>0){
+			System.out.println("" + peachNum  + "          Peaches                     $" + String.format("%.2f", peachNum*peachCost));
 		}
 		
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
 		
-		
-		
+		double cost = applesNum*applesCost + bananaNum*bananaCost + grapeNum*grapeCost + mangoNum*mangoCost + peachNum*peachCost;
+		double tax = cost * 0.07;
+		System.out.println("Subtotal: $" + String.format("%.2f", cost));
+		System.out.println("Tax: $" + String.format("%.2f", tax));
+		System.out.println("");
+		System.out.println("Total: $" + String.format("%.2f", cost + tax));
+				
 	}
 	
 }
+
 //Roughly 15 minutes to type in everything
