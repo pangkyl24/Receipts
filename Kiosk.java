@@ -35,7 +35,7 @@ public class Kiosk{
 			System.out.println("Peaches");
 			
 			System.out.println("");
-			System.out.println("Which item would you like ot purchase?");
+			System.out.println("Which item would you like to purchase?");
 			
 			input = scan.nextLine();
 			
@@ -49,17 +49,17 @@ public class Kiosk{
 				System.out.println("Item Added.");
 				numPurchases++;
 			}
-			else if(input.equals("Bananas")){
+			else if(input.equals("Grapes")){
 				grapeNum++;
 				System.out.println("Item Added.");
 				numPurchases++;
 			}
-			else if(input.equals("Bananas")){
+			else if(input.equals("Mangos")){
 				mangoNum++;
 				System.out.println("Item Added.");
 				numPurchases++;
 			}
-			else if(input.equals("Bananas")){
+			else if(input.equals("Peaches")){
 				peachNum++;
 				System.out.println("Item Added.");
 				numPurchases++;
@@ -68,7 +68,9 @@ public class Kiosk{
 				System.out.println("Item Not Found");
 			}
 			
-			System.out.println("Would you like ot continue shopping? Y/N");
+			if(numPurchases < 9){
+				System.out.println("Would you like to continue shopping? Y/N");
+			}
 			
 			input = scan.nextLine();
 			if(input.equals("N")){
@@ -76,7 +78,7 @@ public class Kiosk{
 			}
 			System.out.println("");
 		
-		} while(numPurchases < 9)
+		} while(numPurchases < 9);
 	
 		Printer print = new Printer();
 		print.printReceipt(applesNum, bananaNum, grapeNum, mangoNum, peachNum, applesCost, bananaCost, grapeCost, mangoCost, peachCost);
