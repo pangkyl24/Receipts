@@ -19,3 +19,24 @@
 * Have fun with the assignment!!       *
 ****************************************
 */
+public class Printer{
+	
+	public void printReceipt(int applesNum, int bananaNum, int grapeNum, int mangoNum, int peachNum, double applesCost, double bananaCost, double grapeCost, double mangoCost, double peachCost){
+		
+		System.out.println("");
+		System.out.println("Walmart Food Receipt");
+		
+		System.out.println("Qty    Item Description    Cost");
+		if(applesNum>0){
+			System.out.println("" + applesNum + "      Apples              $" + applesNum*applesCost);
+		}
+		if(bananaNum>0){
+			System.out.println("" + bananaNum + "      Bananas             $" + bananaNum*bananaCost);
+		}
+		
+		
+		
+		
+	}
+	
+}
