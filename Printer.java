@@ -68,7 +68,7 @@ public class Printer{
 * While I was doing this, I knew that my code had to have a clear algorithm from the beginning, for the first few minutes of having this assignment, I didnt even write anything out, I just planned ahead for what I was going to write.
 * Eventually I settled on using a lot of the display/UI features in the example code provided and modified it in order to better suit my project 
 * As for the algorithm, I used a do-while loop to ensure that there could only be 9 items bought, and used numPurchases as the counting variable to note down how many items were bought.
-* So far, I have had very little issues. While I work, normally I just type code until it works well
+* So far, I have had very few issues. While I work, normally I just type code until it works well
 * This time I decided to think about what direction I want to push my code towards before writing
 * This is very useful since by doing this beforehand, I can minimize any logical errors and only focus on the syntax ones, which are super quick and easy to fix.
 */
