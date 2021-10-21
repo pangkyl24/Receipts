@@ -40,3 +40,4 @@ public class Printer{
 	}
 	
 }
+//Roughly 15 minutes to type in everything
