@@ -1,4 +1,3 @@
-
 //your main interface for the project, with the main method
 import java.util.Scanner;
 
@@ -20,12 +19,12 @@ public class Kiosk{
 		
 		int numPurchases = 0;
 		Scanner scan = new Scanner(System.in);
-		String input = "";
+		int input = 0;
 		
 		System.out.println("");
 		System.out.println("Welcome to Walmart! The store to buy all the food you need.");
 		System.out.println("");
-		do {
+		/*do {
 			System.out.println("What would you like to buy? Your choices are:");
 			
 			System.out.println("Apples");
@@ -78,7 +77,66 @@ public class Kiosk{
 			}
 			System.out.println("");
 		
-		} while(numPurchases < 9);
+		} while(numPurchases < 9);*/
+		System.out.println("How many apples would you like to buy? (Max = 9)");
+		input = scan.nextInt();
+		scan.nextLine();
+		if (input > 9){
+			System.out.println("Ordered more than 9 apples, adding 9 apples to your order");
+			input = 9;
+		}
+		else{
+			System.out.println("Added " + input + " apples to your order");
+		}
+		applesNum+=input;
+		
+		System.out.println("How many bananas would you like to buy? (Max = 9)");
+		input = scan.nextInt();
+		scan.nextLine();
+		if (input > 9){
+			System.out.println("Ordered more than 9 bananas, adding 9 bananas to your order");
+			input = 9;
+		}
+		else{
+			System.out.println("Added " + input + " bananas to your order");
+		}
+		bananaNum+=input;
+		
+		System.out.println("How many grapes would you like to buy? (Max = 9)");
+		input = scan.nextInt();
+		scan.nextLine();
+		if (input > 9){
+			System.out.println("Ordered more than 9 grapes, adding 9 grapes to your order");
+			input = 9;
+		}
+		else{
+			System.out.println("Added " + input + " grapes to your order");
+		}
+		grapeNum+=input;
+		
+		System.out.println("How many mangos would you like to buy? (Max = 9)");
+		input = scan.nextInt();
+		scan.nextLine();
+		if (input > 9){
+			System.out.println("Ordered more than 9 mangos, adding 9 mangos to your order");
+			input = 9;
+		}
+		else{
+			System.out.println("Added " + input + " mangos to your order");
+		}
+		mangoNum+=input;
+		
+		System.out.println("How many peaches would you like to buy? (Max = 9)");
+		input = scan.nextInt();
+		scan.nextLine();
+		if (input > 9){
+			System.out.println("Ordered more than 9 peaches, adding 9 peaches to your order");
+			input = 9;
+		}
+		else{
+			System.out.println("Added " + input + " peaches to your order");
+		}
+		peachNum+=input;
 	
 		Printer print = new Printer();
 		print.printReceipt(applesNum, bananaNum, grapeNum, mangoNum, peachNum, applesCost, bananaCost, grapeCost, mangoCost, peachCost);
