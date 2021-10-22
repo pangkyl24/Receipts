@@ -49,10 +49,10 @@ public class Printer{
 		
 		double cost = applesNum*applesCost + bananaNum*bananaCost + grapeNum*grapeCost + mangoNum*mangoCost + peachNum*peachCost;
 		double tax = cost * 0.07;
-		System.out.println("Subtotal: $" + String.format("%.2f", cost));
-		System.out.println("Tax: $" + String.format("%.2f", tax));
+		System.out.println("                             Subtotal: $" + String.format("%.2f", cost));
+		System.out.println("                                  Tax:  $" + String.format("%.2f", tax));
 		System.out.println("");
-		System.out.println("Total: $" + String.format("%.2f", cost + tax));
+		System.out.println("                                Total: $" + String.format("%.2f", cost + tax));
 				
 	}
 	
@@ -72,12 +72,4 @@ public class Printer{
 * This time I decided to think about what direction I want to push my code towards before writing
 * This is very useful since by doing this beforehand, I can minimize any logical errors and only focus on the syntax ones, which are super quick and easy to fix.
 */
-
-
-
-
-
-
-
-
 
