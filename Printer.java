@@ -55,10 +55,10 @@ public class Printer{
 		
 		double cost = applesNum*applesCost + bananaNum*bananaCost + grapeNum*grapeCost + mangoNum*mangoCost + peachNum*peachCost;
 		double tax = cost * 0.07;
-		System.out.println("                             Subtotal: $" + String.format("%.2f", cost));
-		System.out.println("                                  Tax:  $" + String.format("%.2f", tax));
+		System.out.println("                            Subtotal: $" + String.format("%.2f", cost));
+		System.out.println("                                 Tax:  $" + String.format("%.2f", tax));
 		System.out.println("");
-		System.out.println("                                Total: $" + String.format("%.2f", cost + tax));
+		System.out.println("                               Total: $" + String.format("%.2f", cost + tax));
 				
 	}
 	
