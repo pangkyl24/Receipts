@@ -40,7 +40,13 @@ public class Printer{
 			System.out.println("" + mangoNum  + "          Mangos                      $" + String.format("%.2f", mangoNum*mangoCost));
 		}
 		if(peachNum>0){
-			System.out.println("" + peachNum  + "          Peaches                     $" + String.format("%.2f", peachNum*peachCost));
+			if(peachNum>=7){
+				System.out.println("" + peachNum  + "          Peaches                    $" + String.format("%.2f", peachNum*peachCost));
+			}
+			else{
+				System.out.println("" + peachNum  + "          Peaches                     $" + String.format("%.2f", peachNum*peachCost));
+			}
+			
 		}
 		
 		System.out.println("");
