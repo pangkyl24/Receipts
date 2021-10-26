@@ -5,6 +5,7 @@ public class Kiosk{
 	
 	public static void main(String[] args){
 		
+		/*
 		int applesNum = 0;
 		int bananaNum = 0;
 		int grapeNum = 0;
@@ -16,10 +17,15 @@ public class Kiosk{
 		double grapeCost = 0.2;
 		double mangoCost = 0.99;
 		double peachCost = 1.59;
+		*/
 		
-		int numPurchases = 0;
+		//int numPurchases = 0;
 		Scanner scan = new Scanner(System.in);
-		int input = 0;
+		//int input = 0;
+		
+		int[] number = new int[]{0, 0, 0, 0, 0};
+		double[] cost = new double[]{0.5, 0.6, 0.2, 0.99, 1.59};
+		String[] items = new String[]{"Apples", "Bananas", "Grapes", "Mangos", "Peaches"};
 		
 		System.out.println("");
 		System.out.println("Welcome to Walmart! The store to buy all the food you need.");
@@ -78,7 +84,8 @@ public class Kiosk{
 			System.out.println("");
 		
 		} while(numPurchases < 9);*/
-		System.out.print("How many apples would you like to buy? (Max = 9) ");
+		
+		/*System.out.print("How many apples would you like to buy? (Max = 9) ");
 		input = scan.nextInt();
 		scan.nextLine();
 		if (input > 9){
@@ -137,9 +144,25 @@ public class Kiosk{
 			System.out.println("Added " + input + " peaches to your order");
 		}
 		peachNum+=input;
+		*/
 	
+		for(int i = 0; i < items.length; i++){
+			
+			System.out.print("How many " + items[i] + " would you like to buy? (Max = 9) ");
+			number[i] = scan.nextInt();
+			if (number[i] > 9){
+				number[i] = 9;
+				System.out.println("Ordered more than 9 " + items[i] + "! Adding 9 to your order.");
+			}
+			else {
+				System.out.println("Added " + number[i] + " " + items[i] + " to your order.");
+			}
+			System.out.println();
+		}
+		
 		Printer print = new Printer();
-		print.printReceipt(applesNum, bananaNum, grapeNum, mangoNum, peachNum, applesCost, bananaCost, grapeCost, mangoCost, peachCost);
+		print.printReceipt(number[0], number[1], number[2],number[3],number[4], cost[0], cost[1], cost[2], cost[3], cost[4]);
+		//print.printReceipt(applesNum, bananaNum, grapeNum, mangoNum, peachNum, applesCost, bananaCost, grapeCost, mangoCost, peachCost);
 	
 	
 	}	
