@@ -78,7 +78,7 @@ public class Kiosk{
 			System.out.println("");
 		
 		} while(numPurchases < 9);*/
-		System.out.println("How many apples would you like to buy? (Max = 9)");
+		System.out.print("How many apples would you like to buy? (Max = 9) ");
 		input = scan.nextInt();
 		scan.nextLine();
 		if (input > 9){
@@ -90,7 +90,7 @@ public class Kiosk{
 		}
 		applesNum+=input;
 		
-		System.out.println("How many bananas would you like to buy? (Max = 9)");
+		System.out.print("How many bananas would you like to buy? (Max = 9) ");
 		input = scan.nextInt();
 		scan.nextLine();
 		if (input > 9){
@@ -102,7 +102,7 @@ public class Kiosk{
 		}
 		bananaNum+=input;
 		
-		System.out.println("How many grapes would you like to buy? (Max = 9)");
+		System.out.print("How many grapes would you like to buy? (Max = 9) ");
 		input = scan.nextInt();
 		scan.nextLine();
 		if (input > 9){
@@ -114,7 +114,7 @@ public class Kiosk{
 		}
 		grapeNum+=input;
 		
-		System.out.println("How many mangos would you like to buy? (Max = 9)");
+		System.out.print("How many mangos would you like to buy? (Max = 9) ");
 		input = scan.nextInt();
 		scan.nextLine();
 		if (input > 9){
@@ -126,7 +126,7 @@ public class Kiosk{
 		}
 		mangoNum+=input;
 		
-		System.out.println("How many peaches would you like to buy? (Max = 9)");
+		System.out.print("How many peaches would you like to buy? (Max = 9) ");
 		input = scan.nextInt();
 		scan.nextLine();
 		if (input > 9){
